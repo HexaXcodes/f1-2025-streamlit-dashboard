@@ -4,13 +4,11 @@ Contains all plotting and visualization functions
 """
 
 import matplotlib.pyplot as plt
-import seaborn as sns
 import pandas as pd
 import numpy as np
 
 class DashboardVisualizations:
     def __init__(self):
-        sns.set_style("whitegrid")
         plt.rcParams['figure.figsize'] = (14, 8)
     
     def plot_driver_standings_bar(self, driver_standings, top_n=10):
