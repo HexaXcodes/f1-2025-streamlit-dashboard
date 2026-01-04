@@ -3,7 +3,8 @@ Visualization Module for F1 Dashboard
 Contains all plotting and visualization functions
 """
 
-
+import matplotlib.pyplot as plt
+import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -11,7 +12,7 @@ import plotly.graph_objects as go
 
 class DashboardVisualizations:
     def __init__(self):
-        pass
+        plt.rcParams['figure.figsize'] = (14, 8)
     
     def plot_driver_standings_bar(self, driver_standings, top_n=10):
         """Create bar chart of top N drivers"""
