@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 
 class DashboardVisualizations:
     def __init__(self):
-        plt.rcParams['figure.figsize'] = (14, 8)
+        pass
     
     def plot_driver_standings_bar(self, driver_standings, top_n=10):
         """Create bar chart of top N drivers"""
